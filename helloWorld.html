@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+            <label class="slds-checkbox_toggle slds-grid">
+                <span class="slds-form-element__label slds-m-bottom_none">Toggle Label</span>
+                <input type="checkbox" name="checkbox-toggle-16" value="checkbox-toggle-16" aria-describedby="checkbox-toggle-16" />
+                <span id="checkbox-toggle-16" class="slds-checkbox_faux_container" aria-live="assertive">
+                    <span class="slds-checkbox_faux"></span>
+                    <!-- Showing Opposite because SLDS toggle is checked right side -->
+                    <span class="slds-checkbox_on">No</span>
+                    <span class="slds-checkbox_off">Yes</span>
+                </span>
+            </label>
+        </div>
+    </lightning-card>
+</template>
